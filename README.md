@@ -6,10 +6,10 @@ ELT project with Nominatin to enhance data from geolocalization points.
 
 Endpoints -
 
-GET enhanced address list - /api/address/users-address/
-GET single enhanced address - api/address/users-address/{id}
-POST single enhanced address - api/address/users-address/
-POST text file with geolocalization codes - /api/address/geo-points/
+GET enhanced address list - /api/address/users-address/ <br />
+GET single enhanced address - api/address/users-address/{id} <br />
+POST single enhanced address - api/address/users-address/ <br />
+POST text file with geolocalization codes - /api/address/geo-points/ <br />
 
 ### Prerequisites
 
