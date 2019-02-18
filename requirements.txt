@@ -1,0 +1,11 @@
+pip==18.1
+django==2.1.5
+Pillow==5.4.0
+psycopg2==2.7.6.1
+psycopg2-binary==2.7.6.1
+django-import-export==1.2.0
+djangorestframework==3.8.2
+django-extra-fields==1.0.0
+django-rest-swagger==2.1.2
+geopy
+opencage==1.1.6

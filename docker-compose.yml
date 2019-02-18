@@ -1,0 +1,22 @@
+postgres:
+  image: mdillon/postgis:10
+  environment:
+   - POSTGRES_PASSWORD=admissiontask
+   - POSTGRES_USER=admissiontask
+   - POSTGRES_DB=admissiontask
+  ports:
+   - "5432:5432"
+  volumes:
+   - /docker/admissiontask/data/postgres:/var/lib/postgresql/data
+
+admissiontask:
+  build: .
+  # command: python3 manage.py runsslserver 0.0.0.0:8000
+  command: python manage.py runserver 0.0.0.0:8000 --insecure
+  volumes:
+    - .:/admissiontask
+  ports:
+    - "8000:8000"
+  links:
+    - postgres
+
