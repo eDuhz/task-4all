@@ -1,0 +1,1285 @@
+{
+	"info": {
+		"_postman_id": "a2aadbdd-c75e-4c93-bdde-dd77e89e3a58",
+		"name": "http://142.93.62.15:8000/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://142.93.62.15:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":{{username}},\n\"password\":{{pw}}\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/login-chef/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":{{username}},\n\"password\":{{pw}}\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/login-chef/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login-chef",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/users/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":{{username}},\n\"password\":{{pw}}\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/users/2105/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":{{username}},\n\"password\":{{pw}}\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/users/2105/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"2105",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/users/2105/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Teste",
+							"type": "text"
+						},
+						{
+							"key": "phone\n",
+							"value": "21 12345678",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/users/2105/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"2105",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/chefs/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":{{username}},\n\"password\":{{pw}}\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/chefs/?category=2&lng=-46.68735849999999&lat=-23.5655726",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"chefs",
+						""
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "2"
+						},
+						{
+							"key": "lng",
+							"value": "-46.68735849999999"
+						},
+						{
+							"key": "lat",
+							"value": "-23.5655726"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/chefs-details/2105/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":{{username}},\n\"password\":{{pw}}\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/chefs-details/2105/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"chefs-details",
+						"2105",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/chef-details/2105/ (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"value": "",
+							"description": "foto do chef",
+							"type": "file"
+						},
+						{
+							"key": "name",
+							"value": "teste",
+							"description": "nome do chef",
+							"type": "text"
+						},
+						{
+							"key": "short_description",
+							"value": "teste",
+							"description": "descrição do chef",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "02928064001",
+							"description": "cpf do chef",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Rua Erechim",
+							"description": "rua",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "1170",
+							"description": "número da residência",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "",
+							"description": "complemento",
+							"type": "text"
+						},
+						{
+							"key": "neighborhood",
+							"value": "Nonoai",
+							"description": "bairro",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Porto Alegre",
+							"description": "cidade",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "RS",
+							"description": "estado",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "90830000",
+							"description": "cep",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "teste@teste.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "53991618783",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/chef-details/2105/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"chef-details",
+						"2105",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/meals/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file"
+						},
+						{
+							"key": "chef",
+							"value": "769",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "11.5",
+							"type": "text"
+						},
+						{
+							"key": "pack",
+							"value": "small",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "categories",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "enabled",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/meals/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"meals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/meals/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file"
+						},
+						{
+							"key": "chef",
+							"value": "769",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "11.5",
+							"type": "text"
+						},
+						{
+							"key": "pack",
+							"value": "small",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "categories",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "enabled",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/meals/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"meals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/meals/?pk=2105",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file"
+						},
+						{
+							"key": "chef",
+							"value": "769",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "11.5",
+							"type": "text"
+						},
+						{
+							"key": "pack",
+							"value": "small",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "categories",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "enabled",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/meals/?chef_pk=2105",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"meals",
+						""
+					],
+					"query": [
+						{
+							"key": "chef_pk",
+							"value": "2105"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/meal-complements/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"meal\": [2461],\n\t\"name\": \"api-test\",\n\t\"price\": \"5.00\",\n\t\"parent\": null\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/meal-complements/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"meal-complements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/manage-address/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file"
+						},
+						{
+							"key": "chef",
+							"value": "769",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "11.5",
+							"type": "text"
+						},
+						{
+							"key": "pack",
+							"value": "small",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "categories",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "enabled",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/manage-address/?page=1",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"manage-address",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/manage-address/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"address\": \"Travessa 26 de Outubro\",\n            \"number\": \"323\",\n            \"address2\": \"\",\n            \"neighborhood\": \"Jardim Nazareth\",\n            \"city\": \"São Paulo\",\n            \"state\": \"SP\",\n            \"zipcode\": \"08150640\",\n            \"longitude\": -46.4006281,\n            \"latitude\": -23.5195819,\n            \"user\": 2105,\n            \"name\": \"teste999\"\n \t\n }"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/manage-address/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"manage-address",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/register-user/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"email\": \"teste3@teste3.com\", \n\t\"name\": \"testeteste\", \n\t\"phone\":\"(53)31231234\", \n\t\"invite_code\":\"\",\n\t\"password\":\"teste123\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/register-user/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register-user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/user-orders/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"email\": \"teste@teste.com\", \n\t\"name\": \"testeteste\", \n\t\"phone\":\"(53)31231234\", \n\t\"invite_code\":\"\",\n\t\"password\":\"teste123\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/user-orders/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/user-orders/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"zipcode\": \"01416000\",\n            \"date\": \"2018-11-13T14:47:39.023902-02:00\",\n            \"status\": \"waiting_payment\",\n            \"shipping\": \"39.02\",\n            \"coupon_discount\": \"0.00\",\n            \"usercredit_discount\": \"0.00\",\n            \"chef\": 756,\n            \"user\": 2099,\n            \"scheduled_date\": \"2018-11-13T14:47:39.023564-02:00\",\n            \"orderitem_set\":[\n            \t{\n            \t\t\"meal\":1,\n            \t\t\"amount\":2, \n            \t\t\"meal_price\":13,\n            \t\t\"comment\":\"teste\"\n            \t}\n            ]\n        }"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/user-orders/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/contacts/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"zipcode\": \"01416000\",\n            \"date\": \"2018-11-13T14:47:39.023902-02:00\",\n            \"status\": \"waiting_payment\",\n            \"shipping\": \"39.02\",\n            \"coupon_discount\": \"0.00\",\n            \"usercredit_discount\": \"0.00\",\n            \"chef\": 756,\n            \"user\": 2099,\n            \"scheduled_date\": \"2018-11-13T14:47:39.023564-02:00\",\n            \"orderitem_set\":[\n            \t{\n            \t\t\"meal\":1,\n            \t\t\"amount\":2, \n            \t\t\"meal_price\":13,\n            \t\t\"comment\":\"teste\"\n            \t}\n            ]\n        }"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/contacts/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/contacts/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "teste@teste.com",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "attachment",
+							"value": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/contacts/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/faq/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/faq/?faq_id=1",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"faq",
+						""
+					],
+					"query": [
+						{
+							"key": "faq_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/favorites/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": 2094,\n\t\"chef\": 2096,\n\t\"add_favorite\": true\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/favorites/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"favorites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/favorites/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": 2094,\n\t\"chef\": 2096\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/favorites/?pk=2094",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"favorites",
+						""
+					],
+					"query": [
+						{
+							"key": "pk",
+							"value": "2094"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/mercado-pago-payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order\": 5291,\n\t\"mp_payment_id\":\"23\",\n\t\"mp_payment_status\":\"pending\",\n\t\"mp_payment_status_detail\": \"teste\",\n\t\"application_fee\": 3,\n\t\"card_token\":\"21e646f6c3ecdc45af1950185e69b9e6\",\n\t\"mp_chef_access_token\":\"APP_USR-7848739356995797-010212-6698ce23c86197e8638df049226f3825-391231877\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/mercado-pago-payment/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mercado-pago-payment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/list-users/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/list-users/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list-users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://142.93.62.15:8000/api/categories/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://142.93.62.15:8000/api/categories/",
+					"protocol": "http",
+					"host": [
+						"142",
+						"93",
+						"62",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "833e41e6-42d5-4502-bdc5-c7be5d0b5e11",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2a048428-96c0-4324-9243-258af884e87b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "0fdbffc1-dcda-4139-bad1-b7893a76a44b",
+			"key": "username",
+			"value": "\"teste@teste.com\"",
+			"type": "string"
+		},
+		{
+			"id": "526d2278-d6a4-4951-a991-178a29d7decf",
+			"key": "pw",
+			"value": "\"teste123\"",
+			"type": "string"
+		},
+		{
+			"id": "ac45ab5e-6f0e-43bc-a867-17c110f9a4fb",
+			"key": "token",
+			"value": "Token 10d7041283550b34069abff5855023f81949b2ee",
+			"type": "string"
+		}
+	]
+}
