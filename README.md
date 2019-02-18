@@ -17,14 +17,15 @@ All you need to run this project is Docker and Postman (or any other API develop
 
 ### Installing
 
-1 - Clone this project
-2 - If you don't have docker installed run install_docker.sh or install docker and docker-compose
-3 - Run deploy.sh
-4 - Open your postman import the collection and done!
+1 - Clone this project <br />
+2 - If you don't have docker installed run install_docker.sh or install docker and docker-compose <br />
+3 - Run deploy.sh <br />
+4 - Open your postman import the collection and done! <br />
 
 ## Running the tests
 
 It's pretty simple to run the unit tests. All you need to do is run the tests.sh script or execute the following command:
+<br />
 docker exec -it admissiontask_admissiontask_1 ./manage.py test address
 
 ### And coding style tests
